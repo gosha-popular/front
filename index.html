@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин посуды</h1>
+        <nav>
+            <a href="#" class="active">Каталог</a>
+            <a href="#" id="cart-link">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products-section">
+            <h2>Каталог товаров</h2>
+            <div class="products-container" id="products-container">
+                <!-- Товары будут загружены через JS -->
+            </div>
+        </section>
+
+        <section id="cart-section" class="hidden">
+            <h2>Корзина</h2>
+            <div class="cart-container" id="cart-container">
+                <!-- Товары в корзине будут загружены через JS -->
+            </div>
+            <div class="cart-total">
+                <p>Итого: <span id="total-price">0</span> руб.</p>
+                <button id="checkout-btn">Оформить заказ</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
